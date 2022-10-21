@@ -1,7 +1,6 @@
 // complete the given function
 
 function palindrome(str){
-  let ans = true;
   let j = str.length -1;
     for( let i = 0 ; i < j/2 ;i++)
     {
@@ -10,17 +9,11 @@ function palindrome(str){
       if( x != y)
       {
     
-        ans = false;
+        return false;
       }
     }
-    if( ans == true )
-    {
-      console.log("passed string is palindrome ");
-    }
-    else
-    {
-      console.log("passed string not a palindrome");
-    }
+  return true;
+   
 }
 
 module.exports = palindrome
